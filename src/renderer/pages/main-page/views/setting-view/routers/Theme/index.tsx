@@ -51,9 +51,9 @@ export default function Theme(props: IProps) {
         ></ThemeItem>
         {allThemePacks?.map((item) => (
           <ThemeItem
-            key={item.path}
+            key={item?.path}
             themePack={item}
-            selected={item.path === currentThemePack?.path}
+            selected={item?.path === currentThemePack?.path}
           ></ThemeItem>
         ))}
         <div
